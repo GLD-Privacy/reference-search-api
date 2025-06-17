@@ -7,7 +7,7 @@ info:
     (openai.com, cookbook.openai.com, docs.stripe.com, react.dev, shopify.dev)
     and return documentation, tutorials, and sample code.
 servers:
-  - url: https://gld-privacy.github.io/reference-search-api
+  - url: https://gld-privacy.github.io
 paths:
   /search:
     get:

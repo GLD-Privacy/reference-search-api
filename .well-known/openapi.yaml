@@ -7,7 +7,7 @@ info:
     (openai.com, cookbook.openai.com, docs.stripe.com, react.dev, shopify.dev)
     and return documentation, tutorials, and sample code.
 servers:
-  - url: https://example.com/api
+  - url: https://mockgptapi.onrender.com
 paths:
   /search:
     get:

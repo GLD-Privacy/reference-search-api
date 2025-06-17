@@ -3,25 +3,26 @@ info:
   title: Reference Search API
   version: 1.0.0
   description: |
-    This API provides a reference search function for GPT Actions,
-    limited to trusted sources such as openai.com, cookbook.openai.com,
-    docs.stripe.com, react.dev, and shopify.dev.
+    This API allows GPT to search trusted domains 
+    (openai.com, cookbook.openai.com, docs.stripe.com, react.dev, shopify.dev)
+    and return documentation, tutorials, and sample code.
 servers:
   - url: https://gld-privacy.github.io/reference-search-api
 paths:
   /search:
     get:
       operationId: searchReferenceMaterials
-      summary: Search technical references
+      summary: Search trusted reference materials
       parameters:
         - name: query
           in: query
           required: true
           schema:
             type: string
+            description: Search keyword (e.g. 'LangChain agent tutorial')
       responses:
         '200':
-          description: OK
+          description: A list of search results
           content:
             application/json:
               schema:
